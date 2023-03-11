@@ -33,6 +33,9 @@ body {
   .logo {
     margin-right: 17px;
   }
+  .logo:hover{
+    filter: saturate(0%) brightness(10);
+  }
   .logo-text {
     font-family: Lato;
     font-size: 24px;
@@ -40,24 +43,26 @@ body {
     line-height: 16px;
     text-transform: uppercase;
   }
+  .logo-text:hover{
+    color: $color--white;
+  }
   .burger-menu {
     display: none;
   }
-  .burger-menu__line { 
-  .line--top {
+  .burger-menu__line {
+    .line--top {
+    }
+    .line--mdl {
+    }
+    .line--btm {
+    }
   }
-  .line--mdl {
-  }
-  .line--btm {
-  }
-  }
- 
   &__list--hiden {
     display: none;
   }
   &__nav-item--hiden {
   }
-  
+
   &__nav {
   }
   &__nav-list {
@@ -66,10 +71,17 @@ body {
     margin-right: 48px;
     @include fontSize16(15px);
   }
+  &__nav-item:hover{
+    color: $color--white;
+  }
   .btn {
     background-color: $color--violet-light;
     border-radius: 40px;
     color: $color--white;
+  }
+  .btn:hover{
+    background-color: $color--white;
+    color: $color--violet-light;
   }
   .btn-buy {
     padding: 11px 35px;
@@ -98,8 +110,8 @@ body {
     margin-top: 15px;
     text-transform: uppercase;
   }
-  
-  &__btn { 
+
+  &__btn {
     margin-top: 426px;
   }
   .btn-download {
