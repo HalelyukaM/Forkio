@@ -1,0 +1,98 @@
+@import "variables.mixins";
+/* general  */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../img/header-bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  .header--container {
+  }
+  &__navbar,
+  &__logo,
+  &__nav,
+  &__nav-list {
+    @include flexCenter(row);
+  }
+  &__navbar {
+    justify-content: space-between;
+    padding-top: 29.5px;
+    color: $color--violet-light;
+  }
+  &__logo {
+  }
+  .logo {
+    margin-right: 17px;
+  }
+  .logo-text {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  &__nav {
+  }
+  &__nav-list {
+  }
+  &__nav-item {
+    margin-right: 48px;
+    @include fontSize16(15px);
+  }
+  .btn {
+    background-color: $color--violet-light;
+    border-radius: 40px;
+    color: $color--white;
+  }
+  .btn-buy {
+    padding: 11px 20px;
+    @include fontSize16(17px);
+  }
+  &__content {
+    text-align: center;
+    margin-top: 126px;
+  }
+  &__title {
+    color: $color--white;
+    @include fontH1;
+  }
+  &__subtitle {
+    color: $color--violet-light;
+    margin-top: 19px;
+    font-family: Lato;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  &__descr {
+    font-size: 16px;
+    line-height: 16px;
+    color: $color--gray-light;
+    margin-top: 19px;
+  }
+  &__btn {
+  }
+  .btn-download {
+    padding: 23px 61px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 426px;
+    color: $color--white;
+  }
+  .btn-descr {
+    margin-top: 19px;
+    font-size: 14px;
+    line-height: 15px;
+    color: $color--gray-light;
+  }
+}
