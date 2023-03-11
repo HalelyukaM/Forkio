@@ -1,0 +1,124 @@
+@import 'variables.mixins';
+
+// header {
+//     height: 929px;
+// }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.editor__introduction {
+    max-width: 906px;
+    margin: 0 auto 70px auto;
+    text-align: center;
+
+    h2 {
+        @include fontH2;
+        font-family: 'Montserrat', sans-serif;
+        color: $color--violet-dark;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+    }
+
+    p {
+        font-family: 'Lato',sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        color: $color--gray-dark;
+        margin-right: 45px;
+        margin-bottom: 20px;
+    }
+
+    .editor__introduction__btn {
+        height: 26px;
+    }
+}
+
+.editor__features {
+    background-color: #F4F4F4;
+    padding: 94px 0 33px 0px;
+}
+
+.features {
+    display: flex;
+    gap: 49px;
+
+    .features__list {
+        width: 45%;
+        max-width: 540px;
+    }
+
+    .features__item {
+        min-height: 110px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:first-child {
+            img {
+                margin-right: 23px;
+            }
+        }
+
+        &:nth-child(2) {
+            img {
+                margin-right: 44px;
+            }
+        }
+
+        &:nth-child(3) {
+            img {
+                margin-left: 16px;
+                margin-right: 59px;
+            }
+        }
+
+        &:last-child {
+            img {
+                margin-left: 11px;
+                margin-right: 53px;
+            }
+        }
+    }
+
+    .features-item__content {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 21px;
+
+        h6 {
+            font-size: 16px;
+            color: $color--gray-dark;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: $color--gray-light;
+        }
+    }
+
+    .features__result {
+        width: 56%;
+        margin-right: -90px;
+
+        h3 {
+            @include fontH3;
+            font-family: 'Montserrat', sans-serif;
+            color: $color--violet-light;
+            margin-left: 25px;
+            margin-bottom: 16px;
+        }
+
+        // img {
+        //     width: 100%;
+        // }
+    }
+}
