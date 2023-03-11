@@ -53,12 +53,12 @@ body {
     color: $color--white;
   }
   .btn-buy {
-    padding: 11px 20px;
+    padding: 11px 35px;
     @include fontSize16(17px);
   }
   &__content {
     text-align: center;
-    margin-top: 126px;
+    margin-top: 112px;
   }
   &__title {
     color: $color--white;
@@ -76,6 +76,7 @@ body {
     line-height: 16px;
     color: $color--gray-light;
     margin-top: 19px;
+    text-transform: uppercase;
   }
   &__btn {
   }
