@@ -1,0 +1,31 @@
+/* Colors */
+$color--white: white;
+$color--black: black;
+$color--violet-dark: rgba(99, 92, 115, 1);
+$color--violet-light: rgba(141, 129, 172, 1);
+$color--violet-text: rgba(162, 145, 165, 1);
+$color--violet-card: rgba(70, 48, 72, 1);
+$color--gray-dark: rgba(50, 50, 50, 1);
+$color--gray-light: rgba(132, 142, 151, 1);
+
+/* Fonts */
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@mixin fontH1 {
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 82px;
+}
+@mixin fontH2 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 54px;
+}
+@mixin fontH3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
