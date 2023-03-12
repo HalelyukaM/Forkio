@@ -14,7 +14,7 @@
     margin: 0 auto 70px auto;
     text-align: center;
 
-    h2 {
+    .editor__introduction__title {
         @include fontH2;
         font-family: 'Montserrat', sans-serif;
         color: $color--violet-dark;
@@ -22,7 +22,7 @@
         margin-bottom: 28px;
     }
 
-    p {
+    .editor__introduction__content {
         font-family: 'Lato',sans-serif;
         font-weight: 400;
         font-size: 21px;
@@ -32,14 +32,44 @@
         margin-bottom: 20px;
     }
 
-    .editor__introduction__btn {
-        height: 26px;
+    .editor__introduction__btns {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .editor-btn {
+            .editor-btn__link {
+                @include editorBtn;
+                display: inline-block;
+                color: $color--gray-dark;
+                background-color: $color--editor-bg;
+                border: 1px solid;
+                border-radius: 6px;
+                border-color: $color--editor-btn-border;
+
+                .editor-btn__link__icon {
+                    vertical-align: text-top;
+                    margin-right: 8px;
+                }
+
+                .editor-btn__link__counter {
+                    display: inline-block;
+                    margin-left: 4px;
+                    vertical-align: top;
+                    background-color: $color--editor-btn-counter-bg;
+                    border: 1px solid $color--editor-btn-counter-border;
+                    border-radius: 2em;
+                    padding: 0 6px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
 .editor__features {
-    background-color: #F4F4F4;
-    padding: 94px 0 33px 0px;
+    background-color: $color--editor-bg;
+    padding: 94px 0 33px 0;
 }
 
 .features {
