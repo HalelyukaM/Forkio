@@ -5,15 +5,15 @@
 }
 @media screen and (min-width: 481px) and (max-width: 992px) {
   .header {
-    &__wrapper {
+    .header__wrapper {
       background-color: $color--gray-nav--media;
       height: 118px;
     }
-    &__navbar {
+    .header__navbar {
       position: relative;
       padding: 24px 10px 0;
     }
-    &__nav-list {
+    .header__nav-list {
       position: absolute;
       top: 85px;
       right: 0;
@@ -23,28 +23,28 @@
       padding-left: 10px;
       padding-right: 10px;
     }
-    &__nav-item:last-child {
+    .header__nav-item:last-child {
       margin-right: 0;
     }
-    &__content {
+    .header__content {
       margin-top: 68px;
     }
-    &__title {
+    .header__title {
       font-size: 72px;
       font-weight: 700;
       line-height: 72px;
     }
-    &__subtitle {
+    .header__subtitle {
       font-size: 24px;
       font-weight: 400;
       line-height: 24px;
     }
-    &__descr {
+    .header__descr {
       font-size: 14px;
       font-weight: 400;
       line-height: 14px;
     }
-    &__btn {
+    .header__btn {
       margin-top: 439px;
     }
   }
@@ -69,7 +69,7 @@
 }
 @media screen and (max-width: 655px) {
   .header {
-    &__nav-item {
+    .header__nav-item {
       margin-right: 20px;
     }
   }
@@ -82,17 +82,17 @@
 @media screen and (min-width: 320px) and (max-width: 481px) {
   .header {
     max-height: 718px;
-    &__wrapper {
+    .header__wrapper {
       background-color: $color--gray-nav--media;
       height: 103px;
     }
     .logo {
       margin-right: 0;
     }
-    &__navbar {
+    .header__navbar {
       padding: 32px 4px 0;
     }
-    &__nav-list,
+    .header__nav-list,
     .logo-text {
       display: none;
     }
@@ -102,26 +102,26 @@
     .header__nav--hidden {
       display: block;
     }
-    &__content {
+    .header__content {
       padding: 0 10px;
       margin-top: 50px;
     }
-    &__title {
+    .header__title {
       font-size: 48px;
       line-height: 48px;
     }
-    &__subtitle {
+    .header__subtitle {
       font-size: 18px;
       line-height: 24px;
       text-transform: capitalize;
       font-family: Montserrat;
       margin-top: 21px;
     }
-    &__descr {
+    .header__descr {
       font-size: 14px;
       line-height: 14px;
     }
-    &__btn {
+    .header__btn {
       margin-top: 394px;
     }
     .btn-download {
@@ -134,11 +134,7 @@
     }
   }
   .testimonials {
-    background: linear-gradient(45deg, #4e384e, transparent 80%), url('/img/testmonials-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    .testimonials--container{
+    .testimonials--container {
       padding-top: 55px;
       text-align: center;
     }
@@ -146,28 +142,25 @@
       font-size: 36px;
       line-height: 48px;
     }
-    .testimonials__grid{
+    .testimonials__grid {
       display: block;
       margin-top: 43px;
-    
     }
-    .testimonials__grid-item{
+    .testimonials__grid-item {
       padding: 0 30px;
     }
-    .testimonials__grid-item:nth-child(5){
+    .testimonials__grid-item:nth-child(5) {
       margin-bottom: 26px !important;
-      .testimonials__text{
+      .testimonials__text {
         margin-top: 32px;
       }
-
     }
-    .testimonials__grid-item:not(:last-child){
+    .testimonials__grid-item:not(:last-child) {
       margin-bottom: 41px;
     }
-    .testimonials__descr{
+    .testimonials__descr {
       margin-top: 47px;
       max-width: 251px;
     }
   }
-
 }

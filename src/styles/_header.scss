@@ -1,13 +1,4 @@
 @import "variables.mixins";
-/* general  */
-body {
-  font-family: "Montserrat", sans-serif;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .header {
   background-image: url(../img/header-bcg.svg);
   background-repeat: no-repeat;
@@ -15,10 +6,6 @@ body {
   background-position: center;
   max-width: 100%;
   max-height: 800px;
-  .header--container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
   &__navbar,
   &__nav,
   &__nav-list {
@@ -114,10 +101,10 @@ body {
     position: relative;
   }
   &__item--hiden:hover,
-  &__item--hiden:active{
+  &__item--hiden:active {
     color: $color--violet-light;
-    
-    a::before{
+
+    a::before {
       content: "";
       top: 20px;
       bottom: 20px;
@@ -127,7 +114,7 @@ body {
       position: absolute;
     }
   }
-  &__item--hiden:last-child{
+  &__item--hiden:last-child {
     margin-bottom: 15px;
   }
   &__nav-item {
@@ -173,7 +160,6 @@ body {
     margin-top: 15px;
     text-transform: uppercase;
   }
-
   &__btn {
     margin-top: 426px;
   }
