@@ -1,10 +1,5 @@
 @import 'variables.mixins';
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .pricing {
     padding-top: 108px;
     padding-bottom: 73px;
@@ -71,7 +66,7 @@
                 height: 5px;
                 background-color: $color--violet-light;
                 bottom: -43px;
-                right: 98px;
+                right: 38%;
             }
         }
 
@@ -132,7 +127,7 @@
             height: 5px;
             background-color: $color--violet-light;
             bottom: -52px;
-            left: 120px;
+            left: 40%;
         }
     }
 
@@ -149,10 +144,12 @@
 
 
 @media screen and (max-width: 992px) {
+
     .container {
         max-width: 768px;
         margin: 0 auto;
     }
+    
     .pricing {
         padding-top: 90px;
         padding-bottom: 94px;
@@ -165,15 +162,41 @@
     }
 
     .pricing__info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
         row-gap: 30px;
         column-gap: 25px;
     }
     
     .tariff {
+        width: 46%;
+        max-width: 257px;
+
         &:nth-child(3) {
             margin-left: -42px;
+            width: 54%;
+            max-width: 299px;
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        min-width: 320px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .tariff {
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+
+        &:nth-child(3) {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+}
+

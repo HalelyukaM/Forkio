@@ -1,13 +1,13 @@
 @import 'variables.mixins';
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.editor {
+    margin-top: 129px;
 }
 
 .editor__introduction {
     max-width: 906px;
-    margin: 0 auto 70px auto;
+    margin: 0 auto;
+    margin-bottom: 70px;
     text-align: center;
 
     .editor__introduction__title {
@@ -86,6 +86,7 @@
         display: flex;
         align-items: flex-start;
         margin-bottom: 32px;
+    }
 
         &:first-child {
             img {
@@ -113,7 +114,7 @@
                 margin-right: 53px;
             }
         }
-    }
+    // }
 
     .features-item__content {
         font-family: 'Montserrat', sans-serif;
@@ -152,6 +153,12 @@
 }
 
 @media screen and (max-width: 992px) {
+
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
     .editor__introduction {
         max-width: 689px;
         margin-top: 88px;
@@ -206,11 +213,59 @@
 
             .features__result {
                 width: 100%;
-                margin-left: 68px;
+                padding-left: 68px;
                 
                 .features__title {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        min-width: 320px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .editor__introduction {
+        .editor__introduction__btns {
+            flex-wrap: wrap;
+        }
+    }
+    
+    .editor__features {
+        .features {
+
+            .features__list {
+                padding-left: 0;
+            }
+
+            .features__item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-right: 0;
+                &:first-child {
+                    margin-right: 0;
+                }
+                &:last-child {
+                    margin-bottom: 58px;
+                }
+
+                img {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                }
+            }
+
+            .features__result {
+                padding-left: 0;
             }
         }
     }
