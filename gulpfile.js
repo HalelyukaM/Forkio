@@ -41,8 +41,9 @@ function styles() {
     .pipe(order([
       'normalize.scss',
       'variables.mixins.scss',
-      'style.scss',
-      'media.scss'  
+      'header.scss',
+      'testimonials.scss',
+      'media.scss', 
       ])) 
       .pipe(concat('main.min.css'))
       .pipe(sass().on('error', sass.logError))
