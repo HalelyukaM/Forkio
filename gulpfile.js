@@ -104,12 +104,12 @@ const server = () => {
 };
 /* clean dist */
 function clearDist() {
-  return gulp.src(['dist/**/*'], {read: false, allowEmpty: true})
+  return gulp.src(['dist'], {read: false, allowEmpty: true})
     .pipe(clean());
 }
 
 exports.build = gulp.series(clearDist, html, styles, scripts,  img );
 exports.dev = gulp.series(html, styles, scripts, img, gulp.parallel(server, watch)); 
-
+exports.clearDist =clearDist;
 
 

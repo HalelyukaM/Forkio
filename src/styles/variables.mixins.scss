@@ -19,6 +19,12 @@ $color--editor-btn-counter-border: rgba(0,0,0,0);
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
 @mixin fontH1 {
   font-size: 82px;
   font-weight: 700;
@@ -41,4 +47,9 @@ font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   line-height: 20px;
   padding: 3px 12px;
+}
+@mixin fontSize16($line-height){
+  font-size: 16px;
+  font-weight: 700;
+  line-height: $line-height;
 }
