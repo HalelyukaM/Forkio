@@ -13,6 +13,7 @@ $color--editor-btn-border: rgba(27, 31, 36, 0.15);
 $color--editor-btn-counter-bg: rgba(27, 31, 36, 0.08);
 $color--editor-btn-counter-border: rgba(0,0,0,0);
 
+
 /* Fonts */
 /* 
 font-family: 'Lato', sans-serif;
@@ -37,7 +38,7 @@ font-family: 'Montserrat', sans-serif;
 @mixin editorBtn {
   font-family: Lato, sans-serif;
   font-weight: 700;
-  padding: 3px 12px;
   font-size: 12px;
   line-height: 20px;
+  padding: 3px 12px;
 }
