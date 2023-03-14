@@ -1,0 +1,179 @@
+@import 'variables.mixins';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing {
+    padding-top: 108px;
+    padding-bottom: 73px;
+    background-image: url('/img/pricing-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing__title {
+    @include fontH3;
+    font-family: 'Montserrat', sans-serif;
+    color: $color--white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.tariff {
+    width: 257px;
+    background-color: rgba($color--white, 0.11);
+    text-align: center;
+
+    .tariff__title {
+        color: $color--white;
+        padding: 36px 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        background-color: rgba($color--white, 0.06);
+    }
+
+    .tariff__details {
+        padding-top: 28px;
+        padding-bottom: 38px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: $color--white;
+
+        .tariff__details__price {
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .tariff__details__period {
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            margin-bottom: 76px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 60px;
+                height: 5px;
+                background-color: $color--violet-light;
+                bottom: -43px;
+                right: 98px;
+            }
+        }
+
+        .tariff__details__options {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 44px;
+        }
+
+        // .students-options {
+        //     margin-bottom: 56px;
+        // }
+
+        .tariff__details__btn {
+            padding: 13.5px 36px;
+            font-size: 15px;
+            line-height: 15px;
+            background-color: rgba($color--white, 0.15);
+            border-radius: 32px;
+            text-transform: uppercase;
+        }
+    }
+
+    &:first-child {
+        .tariff__details__options {
+            margin-bottom: 62px;
+        }
+    }
+}
+
+.tariff:nth-child(3) {
+    width: 299px;
+    background-color: $color--violet-card;
+
+    .tariff__title {
+        padding: 43px 0;
+        background-color: rgba($color--black, 0.11);
+    }
+
+    .tariff__details {
+        padding-top: 8px;
+        padding-bottom: 47px;
+    }
+
+    .tariff__details__price {
+        font-size: 82px;
+        line-height: 90px;
+        margin-bottom: 12px;
+    }
+    
+    .tariff__details__period {
+        margin-bottom: 98px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 5px;
+            background-color: $color--violet-light;
+            bottom: -52px;
+            left: 120px;
+        }
+    }
+
+    .tariff__details__options {
+        margin-bottom: 88px;
+    }
+
+    .tariff__details__btn {
+        padding: 18px 48px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .pricing {
+        padding-top: 90px;
+        padding-bottom: 94px;
+    }
+
+    .pricing__title {
+        font-size: 42px;
+        line-height: 44px;
+        margin-bottom: 39px;
+    }
+
+    .pricing__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 25px;
+    }
+    
+    .tariff {
+        &:nth-child(3) {
+            margin-left: -42px;
+        }
+    }
+}
