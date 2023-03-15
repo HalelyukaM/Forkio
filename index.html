@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
+    <!-- Css -->
     <link rel="stylesheet" href="/styles/main.min.css">
     <!-- Google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,56 +12,45 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg">
     <title>Forkio</title>
 </head>
-
 <body>
     <header class="header">
-        <div class="header--container container">
-            <nav class="header__navbar">
-                <div>
-                    <a href="#" class="header__logo">
-                        <img class="logo" src="/img/logo.svg" alt="Logo">
-                        <span class="logo-text">Forkio</span>
-                    </a>
+        <div class="header__wrapper">
+            <div class="header--container container">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img class="logo" src="/img/logo.svg" alt="Logo">
+                            <span class="logo-text">Forkio</span>
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="#">Overview </a></li>
+                            <li class="header__nav-item"><a href="#">About Fork</a></li>
+                            <li class="header__nav-item"><a href="#">Buying Options</a></li>
+                            <li class="header__nav-item"><a href="#">Support </a></li>
+                        </ul>
+                        <button class="btn btn-buy">Buy Now</button>
+                    </nav>
+                    <nav class="header__nav--hidden">
+                        <button class="burger-menu">
+                            <div class="burger-menu__line line--top"></div>
+                            <div class="burger-menu__line line--mdl"></div>
+                            <div class="burger-menu__line line--btm"></div>
+                        </button>
+                        <ul class="header__list--hiden">
+                            <li class="header__item--hiden"><a href="#">Overview</a></li>
+                            <li class="header__item--hiden"><a href="#">About Fork</a></li>
+                            <li class="header__item--hiden"><a href="#">Buying Options</a></li>
+                            <li class="header__item--hiden"><a href="#">Support</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="header__nav">
-                    <button class="burger-menu">
-                        <div class="burger-menu__line line--top"></div>
-                        <div class="burger-menu__line line--mdl"></div>
-                        <div class="burger-menu__line line--btm"></div>
-                    </button>
-                    <ul class="header__list--hiden">
-                        <a class="header__nav-item--hiden" href="#">
-                            <li>Overview</li>
-                        </a>
-                        <a class="header__nav-item--hiden" href="#">
-                            <li>About Fork</li>
-                        </a>
-                        <a class="header__nav-item--hiden" href="#">
-                            <li>Buying Options</li>
-                        </a>
-                        <a class="header__nav-item--hiden" href="#">
-                            <li>Support</li>
-                        </a>
-                    </ul>
-                    <ul class="header__nav-list">
-                        <a class="header__nav-item" href="#">
-                            <li>Overview</li>
-                        </a>
-                        <a class="header__nav-item" href="#">
-                            <li>About Fork</li>
-                        </a>
-                        <a class="header__nav-item" href="#">
-                            <li>Buying Options</li>
-                        </a>
-                        <a class="header__nav-item" href="#">
-                            <li>Support</li>
-                        </a>
-                    </ul>
-                    <button class="btn btn-buy">Buy Now</button>
-                </div>
-            </nav>
+            </div>
         </div>
         <div class="header__content">
             <h1 class="header__title">Fork App</h1>
@@ -73,8 +61,7 @@
                 <p class="btn-descr">Unlimited 30-Days Trial Period</p>
             </div>
         </div>
-
-    </header>
+    </header>        
     
     <main>
         <section class="editor">
@@ -122,28 +109,35 @@
                                 <img src="img/feature-1.png" alt="">
                                 <div class="features-item__content">
                                     <h6>Creatred to Make The Web Better</h6>
-                                    <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                                    <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
+                                        dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
                                 </div>
                             </div>
                             <div class="features__item features-item">
                                 <img src="img/feature-2.png" alt="">
                                 <div class="features-item__content">
                                     <h6>Incredibly Powerful Tool</h6>
-                                    <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                                    <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut
+                                        volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
+                                        erat volutpat.</p>
                                 </div>
                             </div>
                             <div class="features__item features-item">
                                 <img src="img/feature-3.png" alt="">
                                 <div class="features-item__content">
                                     <h6>Experimental Stuff</h6>
-                                    <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                                    <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut
+                                        volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
+                                        erat volutpat.</p>
                                 </div>
                             </div>
                             <div class="features__item features-item">
                                 <img src="img/feature-4.png" alt="">
                                 <div class="features-item__content">
                                     <h6>Creatred to Make The Web Better</h6>
-                                    <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+                                    <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut
+                                        volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam
+                                        erat volutpat.</p>
                                 </div>
                             </div>
                         </div>
@@ -158,6 +152,81 @@
                 </div>
             </div>
         </section>
+        <!-- testimonials -->
+        <section class="testimonials">
+            <div class="testimonials--container container">
+                <h3 class="testimonials__title">People Are Talking About Fork</h3>
+                <div class="testimonials__grid">
+                    <div class="testimonials__grid-item">
+                        <a href="#">
+                            <img src="/img/testimonials-logo1.svg" alt="Smashing Magaizine">
+                        </a>
+                        <p class="testimonials__text">
+                            Sed vestibulum scelerisque urna, eu
+                            finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar
+                            venenatis.
+                        </p>
+                    </div>
+                    <div class="testimonials__grid-item">
+                        <a href="#">
+                            <img src="/img/testimonials-logo2.svg" alt="Codrops">
+                        </a>
+                        <p class="testimonials__text">
+                            Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac,
+                            mollis eleifend nibh.
+                        </p>
+                    </div>
+                    <div class="testimonials__grid-item">
+                        <a href="#">
+                            <img src="/img/testimonials-logo3.svg" alt="W">
+                        </a>
+                        <p class="testimonials__text">
+                            In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet
+                            nibh.
+                            Morbi tempus auctor felis ac vehicula.
+                        </p>
+                    </div>
+                    <div class="testimonials__grid-item">
+                        <a href="#">
+                            <img src="/img/testimonials-logo4.svg" alt="Pixel Budhha">
+                        </a>
+                        <p class="testimonials__text">
+                            Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim
+                            magna.
+                            Sed varius urna et pulvinar venenatis.
+                        </p>
+                    </div>
+                    <div class="testimonials__grid-item">
+                        <a href="#">
+                            <img src="/img/testimonials-logo5.svg" alt="Creative Blog">
+                        </a>
+                        <p class="testimonials__text">
+                            Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id
+                            arcu
+                            consequat faucibus.
+                        </p>
+                    </div>
+                    <div class="testimonials__grid-item">
+                        <a href="#">
+                            <img src="/img/testimonials-logo6.svg" alt="TNW">
+                        </a>
+                        <p class="testimonials__text">
+                            Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor
+                            cursus
+                            massa et vestibulum.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonials__descr">
+                    <p> Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
+                        facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat
+                        nec
+                        elementum orci.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <section class="pricing">
             <div class="container pricing--container">
@@ -169,7 +238,7 @@
                             <p class="tariff__details__price">$<b>29</b></p>
                             <p class="tariff__details__period">per month</p>
                             <p class="tariff__details__options students-options">Personal License</p>
-                            <button  class="tariff__details__btn">purchase</button>
+                            <button class="tariff__details__btn">purchase</button>
                         </div>
                     </div>
                     <div class="pricing__tariff tariff">
@@ -178,7 +247,7 @@
                             <p class="tariff__details__price">$<b>59</b></p>
                             <p class="tariff__details__period">per month</p>
                             <p class="tariff__details__options">Professional License<br>Email Support</p>
-                            <button  class="tariff__details__btn">purchase</button>
+                            <button class="tariff__details__btn">purchase</button>
                         </div>
                     </div>
                     <div class="pricing__tariff tariff">
@@ -187,7 +256,7 @@
                             <p class="tariff__details__price">$<b>99</b></p>
                             <p class="tariff__details__period">per month</p>
                             <p class="tariff__details__options">1-12 Team Members <br> Phone Support</p>
-                            <button  class="tariff__details__btn">purchase</button>
+                            <button class="tariff__details__btn">purchase</button>
                         </div>
                     </div>
                     <div class="pricing__tariff tariff">
@@ -196,14 +265,13 @@
                             <p class="tariff__details__price">$<b>159</b></p>
                             <p class="tariff__details__period">per month</p>
                             <p class="tariff__details__options">Unlimited Team Members <br> 24/ 7 Phone Support</p>
-                            <button  class="tariff__details__btn">purchase</button>
+                            <button class="tariff__details__btn">purchase</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <!-- js -->
     <script src="/scripts/app.min.js"></script>
 </body>
