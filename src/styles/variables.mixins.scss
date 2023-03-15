@@ -46,10 +46,25 @@ font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
-  padding: 3px 12px;
 }
+
 @mixin fontSize16($line-height){
   font-size: 16px;
   font-weight: 700;
+  line-height: $line-height;
+}
+
+@mixin fontSize16_400($line-height){
+  font-size: 16px;
+  line-height: $line-height;
+}
+
+@mixin fontSize14_400($line-height){
+  font-size: 14px;
+  line-height: $line-height;
+}
+
+@mixin fontSize42($line-height){
+  font-size: 42px;
   line-height: $line-height;
 }

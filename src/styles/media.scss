@@ -1,51 +1,63 @@
+@import 'variables.mixins';
+
+@media screen and (max-width: 1200px) {
+    .container {
+      padding: 0 10px;
+    }
+}
+  
 @media screen and (max-width: 992px) {
 
-    .container {
-        max-width: 768px;
-        margin: 0 auto;
-    }
+    .editor {
+        &__introduction {
+            max-width: 689px;
+            margin-top: 156px;
+            margin-bottom: 98px;
+            
+            &__title {
+                @include fontSize42(42px);
+            }
 
-    .editor__introduction {
-        max-width: 689px;
-        margin-top: 88px;
-        margin-bottom: 98px;
-        
-        .editor__introduction__title {
-            font-size: 42px;
-            line-height: 42px;
+            &__content {
+                margin-bottom: 28px;
+                margin-right: 0;
+            }
         }
 
-        .editor__introduction__content {
-            margin-bottom: 28px;
-            margin-right: 0;
-        }
-    }
-
-    .editor__features {
-        background-color: $color--white;
-
-        .features {
-            display: block;
+        &__features {
+            background-color: $color--white;
             padding-top: 62px;
 
-            .title__media {
+            &__img {
+                display: flex;
+                justify-content: flex-end;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .features {
+            flex-direction: column;
+            align-items: center;
+
+            &__title--media {
                 display: block;
-                font-size: 42px;
-                line-height: 44px;
-                font-family: Montserrat, sans-serif;
+                @include fontSize42(44px);
                 font-weight: 700;
                 color: #8d81ac;
                 margin-bottom: 52px;
                 text-align: center;
             }
 
-            .features__list {
+            &__list {
                 width: 100%;
                 max-width: 732px;
                 padding-left: 30px;
             }
 
-            .features__item {
+            &__item {
                 margin-right: 5px;
 
                 &:first-child {
@@ -57,13 +69,8 @@
                 }
             }
 
-            .features__result {
-                width: 100%;
-                padding-left: 68px;
-                
-                .features__title {
-                    display: none;
-                }
+            &__result {
+                display: none;
             }
         }
     }
@@ -71,28 +78,32 @@
     .pricing {
         padding-top: 90px;
         padding-bottom: 94px;
-    }
 
-    .pricing__title {
-        font-size: 42px;
-        line-height: 44px;
-        margin-bottom: 39px;
-    }
+        &--container {
+            max-width: 768px;
+            margin: 0 auto;
+        }
 
-    .pricing__info {
-        flex-wrap: wrap;
-        row-gap: 30px;
-        column-gap: 25px;
-    }
+        &__title {
+            @include fontSize42(44px);
+            margin-bottom: 39px;
+        }
+
+        &__info {
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 25px;
+        }
     
-    .tariff {
-        width: 46%;
-        max-width: 257px;
+        .tariff {
+            width: 46%;
+            max-width: 257px;
 
-        &:nth-child(3) {
-            margin-left: -42px;
-            width: 54%;
-            max-width: 299px;
+            &:nth-child(3) {
+                margin-left: -42px;
+                width: 54%;
+                max-width: 299px;
+            }
         }
     }
 }
@@ -100,59 +111,106 @@
 
 @media screen and (max-width: 480px) {
 
-    .container {
-        min-width: 320px;
-        padding: 0 10px;
-        margin: 0 auto;
-    }
+    .editor {
+        &__introduction {
+            padding: 0 14px;
+            margin-bottom: 88px;
 
-    .editor__introduction {
-        .editor__introduction__btns {
-            flex-wrap: wrap;
+            &__title {
+                font-size: 26px;
+                line-height: 28px;
+            }
+
+            &__content {
+                @include fontSize14_400(20px);
+            }
+
+            &__btns {
+                flex-wrap: wrap;
+
+                .editor-btn {
+                    &__link {
+                        padding: 3px 8px;
+                    }
+                }
+            }
         }
-    }
-    
-    .editor__features {
-        .features {
 
-            .features__list {
+        &__features {
+            padding-top: 32px;
+        }
+    
+        .features {
+            padding: 0 10px;
+
+            &__title--media {
+                font-size: 32px;
+                line-height: 38px;
+                margin-bottom: 36px;
+            }
+
+            &__list {
                 padding-left: 0;
             }
 
-            .features__item {
+            &__item {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
                 margin-right: 0;
+                margin-bottom: 37px;
+
                 &:first-child {
                     margin-right: 0;
                 }
                 &:last-child {
                     margin-bottom: 58px;
                 }
-
-                img {
-                    display: inline-block;
-                    margin-bottom: 20px;
-                    margin-right: 0;
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3),
+                &:last-child {
+                    img {
+                        display: inline-block;
+                        margin-bottom: 20px;
+                        margin-right: 0;
+                    }
                 }
             }
 
-            .features__result {
-                padding-left: 0;
+            .features-item__content {
+                h6 {
+                    margin-bottom: 14px;
+                }
+                p {
+                    font-family: 'Lato', sans-serif;
+                }
             }
         }
     }
 
+    .pricing {
+        padding-top: 0;
+        padding-bottom: 12px;
 
-    .tariff {
-        flex-direction: column;
-        gap: 18px;
-        width: 100%;
+        &__title {
+            font-size: 28px;
+            margin-bottom: 32px;
+        }
 
-        &:nth-child(3) {
+        &__info {
+            gap: 18px;
+        }
+
+        .tariff {
+            flex-direction: column;
+            gap: 18px;
             width: 100%;
-            margin-left: 0;
+
+            &:nth-child(3) {
+                width: 100%;
+                margin-left: 0;
+            }
         }
     }
 }

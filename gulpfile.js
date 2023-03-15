@@ -40,9 +40,13 @@ function styles() {
      return gulp.src(paths.styles.src)
     .pipe(order([
       'normalize.scss',
-      'variables.mixins.scss',
       'style.scss',
-      'media.scss'  
+      'variables.mixins.scss',
+      '_header.scss',
+      '_editor.scss',
+      '_testimonials.scss',
+      '_pricing.scss',
+      'media.scss' 
       ])) 
       .pipe(concat('main.min.css'))
       .pipe(sass().on('error', sass.logError))

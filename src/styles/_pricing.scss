@@ -6,138 +6,124 @@
     background-image: url('/img/pricing-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-.pricing__title {
-    @include fontH3;
-    font-family: 'Montserrat', sans-serif;
-    color: $color--white;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.pricing__info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.tariff {
-    width: 257px;
-    background-color: rgba($color--white, 0.11);
-    text-align: center;
-
-    .tariff__title {
+    &__title {
+        @include fontH3;
         color: $color--white;
-        padding: 36px 0;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 24px;
-        text-transform: uppercase;
-        background-color: rgba($color--white, 0.06);
+        text-align: center;
+        margin-bottom: 60px;
     }
 
-    .tariff__details {
-        padding-top: 28px;
-        padding-bottom: 38px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        color: $color--white;
+    &__info {
+        @include flexCenter(row);
+        gap: 15px;
+    }
 
-        .tariff__details__price {
-            font-size: 60px;
-            line-height: 60px;
-            margin-bottom: 20px;
+    .tariff {
+        width: 257px;
+        background-color: rgba($color--white, 0.11);
+        text-align: center;
+
+        &__title {
+            color: $color--white;
+            padding: 36px 0;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: uppercase;
+            background-color: rgba($color--white, 0.06);
         }
 
-        .tariff__details__period {
-            font-size: 14px;
-            line-height: 16px;
-            text-transform: uppercase;
-            margin-bottom: 76px;
-            position: relative;
+        &__details {
+            padding-top: 28px;
+            padding-bottom: 38px;
+            color: $color--white;
 
-            &::after {
-                position: absolute;
-                content: '';
-                width: 60px;
-                height: 5px;
-                background-color: $color--violet-light;
-                bottom: -43px;
-                right: 38%;
+            &__price {
+                font-size: 60px;
+                line-height: 60px;
+                margin-bottom: 20px;
+            }
+
+            &__period {
+                @include fontSize14_400(16px);
+                text-transform: uppercase;
+                margin-bottom: 76px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 60px;
+                    height: 5px;
+                    background-color: $color--violet-light;
+                    bottom: -43px;
+                    right: 38%;
+                }
+            }
+
+            &__options {
+                @include fontSize16_400(18px);
+                margin-bottom: 44px;
+            }
+
+            &__btn {
+                padding: 13.5px 36px;
+                font-size: 15px;
+                line-height: 15px;
+                background-color: rgba($color--white, 0.15);
+                border-radius: 32px;
+                text-transform: uppercase;
             }
         }
 
-        .tariff__details__options {
-            font-size: 16px;
-            line-height: 18px;
-            margin-bottom: 44px;
-        }
-
-        // .students-options {
-        //     margin-bottom: 56px;
-        // }
-
-        .tariff__details__btn {
-            padding: 13.5px 36px;
-            font-size: 15px;
-            line-height: 15px;
-            background-color: rgba($color--white, 0.15);
-            border-radius: 32px;
-            text-transform: uppercase;
+        &:first-child {
+            .tariff__details__options {
+                margin-bottom: 62px;
+            }
         }
     }
 
-    &:first-child {
-        .tariff__details__options {
-            margin-bottom: 62px;
+    .tariff:nth-child(3) {
+        width: 299px;
+        background-color: $color--violet-card;
+
+        .tariff__title {
+            padding: 43px 0;
+            background-color: rgba($color--black, 0.11);
         }
-    }
-}
 
-.tariff:nth-child(3) {
-    width: 299px;
-    background-color: $color--violet-card;
+        .tariff__details {
+            padding-top: 8px;
+            padding-bottom: 47px;
 
-    .tariff__title {
-        padding: 43px 0;
-        background-color: rgba($color--black, 0.11);
-    }
+            &__price {
+                font-size: 82px;
+                line-height: 90px;
+                margin-bottom: 12px;
+            }
+            
+            &__period {
+                margin-bottom: 98px;
 
-    .tariff__details {
-        padding-top: 8px;
-        padding-bottom: 47px;
-    }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 60px;
+                    height: 5px;
+                    background-color: $color--violet-light;
+                    bottom: -52px;
+                    left: 40%;
+                }
+            }
 
-    .tariff__details__price {
-        font-size: 82px;
-        line-height: 90px;
-        margin-bottom: 12px;
-    }
-    
-    .tariff__details__period {
-        margin-bottom: 98px;
+            &__options {
+                margin-bottom: 88px;
+            }
 
-        &::after {
-            position: absolute;
-            content: '';
-            width: 60px;
-            height: 5px;
-            background-color: $color--violet-light;
-            bottom: -52px;
-            left: 40%;
+            &__btn {
+                padding: 18px 48px;
+                @include fontSize16_400(18px);
+            }
         }
-    }
-
-    .tariff__details__options {
-        margin-bottom: 88px;
-    }
-
-    .tariff__details__btn {
-        padding: 18px 48px;
-        font-size: 16px;
-        line-height: 18px;
     }
 }
