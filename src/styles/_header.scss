@@ -114,9 +114,6 @@
       position: absolute;
     }
   }
-  &__item--hiden:last-child {
-    margin-bottom: 15px;
-  }
   &__nav-item {
     margin-right: 48px;
     @include fontSize16(15px);

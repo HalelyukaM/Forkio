@@ -7,14 +7,11 @@ $color--violet-text: rgba(162, 145, 165, 1);
 $color--violet-card: rgba(70, 48, 72, 1);
 $color--gray-dark: rgba(50, 50, 50, 1);
 $color--gray-light: rgba(132, 142, 151, 1);
-$color--gray-nav--media:rgba(39, 38, 42, 1);
-
+$color--gray-nav--media: rgba(39, 38, 42, 1);
 $color--editor-bg: rgba(244, 244, 244, 1);
 $color--editor-btn-border: rgba(27, 31, 36, 0.15);
 $color--editor-btn-counter-bg: rgba(27, 31, 36, 0.08);
-$color--editor-btn-counter-border: rgba(0,0,0,0);
-
-
+$color--editor-btn-counter-border: rgba(0, 0, 0, 0);
 /* Fonts */
 /* 
 font-family: 'Lato', sans-serif;
@@ -49,23 +46,23 @@ font-family: 'Montserrat', sans-serif;
   line-height: 20px;
 }
 
-@mixin fontSize16($line-height){
+@mixin fontSize16($line-height) {
   font-size: 16px;
   font-weight: 700;
   line-height: $line-height;
 }
 
-@mixin fontSize16_400($line-height){
+@mixin fontSize16_400($line-height) {
   font-size: 16px;
   line-height: $line-height;
 }
 
-@mixin fontSize14_400($line-height){
+@mixin fontSize14_400($line-height) {
   font-size: 14px;
   line-height: $line-height;
 }
 
-@mixin fontSize42($line-height){
+@mixin fontSize42($line-height) {
   font-size: 42px;
   line-height: $line-height;
 }
