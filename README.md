@@ -1,6 +1,6 @@
 # Forkio
 
-**##Project-name: Forkio##**
+## Project-name: Forkio
 
 Description: landing page "Forkio"
 
