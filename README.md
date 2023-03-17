@@ -2,13 +2,11 @@
 
 ## Project-name: Forkio
 
-**Description:**
-***
-landing page "Forkio"
+**Description:** landing page "Forkio"
 
-Participants:
-Diana Chassot
-Marianna Haleliuka
+### Participants:
+* Diana Chassot
+* Marianna Haleliuka
 
 Technologies used in the project:
 HTML;
