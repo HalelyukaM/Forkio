@@ -21,6 +21,7 @@
   "homepage": "https://gitlab.com/DianaCh99/forkio#readme",
   "devDependencies": {
     "browser-sync": "^2.27.11",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -35,5 +36,4 @@
     "gulp-uglify": "^3.0.2",
     "sass": "^1.58.3"
   }
-
 }
