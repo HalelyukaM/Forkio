@@ -204,6 +204,11 @@
       margin-right: 20px;
     }
   }
+  .testimonials{
+    .testimonials__grid{
+      column-gap: 30px;
+    }
+  }
 }
 /* 480px */
 @media screen and (max-width: 480px) {
