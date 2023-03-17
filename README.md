@@ -2,7 +2,9 @@
 
 ## Project-name: Forkio
 
-Description: landing page "Forkio"
+**Description:**
+***
+landing page "Forkio"
 
 Participants:
 Diana Chassot
