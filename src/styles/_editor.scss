@@ -68,7 +68,6 @@
 
     &__content {
         display: flex;
-        // padding-left: 4%;
         gap: 2%;
     }
 
@@ -154,7 +153,7 @@
         &--image {
             position: absolute;
             right: 0;
-            bottom: 32px;
+            // bottom: 32px;
             width: 53%;
             max-width: 700px;
         }
