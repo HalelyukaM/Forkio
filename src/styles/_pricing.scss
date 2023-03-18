@@ -35,92 +35,94 @@
             padding-top: 28px;
             padding-bottom: 38px;
             color: $color--white;
+        }
 
-            &__price {
-                font-size: 60px;
-                line-height: 60px;
-                margin-bottom: 20px;
+        &__price {
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        &__period {
+            @include fontSize14_400(16px);
+            text-transform: uppercase;
+            margin-bottom: 76px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 60px;
+                height: 5px;
+                background-color: $color--violet-light;
+                bottom: -43px;
+                right: 38%;
             }
+        }
 
-            &__period {
-                @include fontSize14_400(16px);
-                text-transform: uppercase;
-                margin-bottom: 76px;
-                position: relative;
+        &__options {
+            @include fontSize16_400(18px);
+            margin-bottom: 44px;
+        }
 
-                &::after {
-                    position: absolute;
-                    content: '';
-                    width: 60px;
-                    height: 5px;
-                    background-color: $color--violet-light;
-                    bottom: -43px;
-                    right: 38%;
-                }
-            }
-
-            &__options {
-                @include fontSize16_400(18px);
-                margin-bottom: 44px;
-            }
-
-            &__btn {
-                padding: 13.5px 36px;
-                font-size: 15px;
-                line-height: 15px;
-                background-color: rgba($color--white, 0.15);
-                border-radius: 32px;
-                text-transform: uppercase;
-            }
+        &__btn {
+            padding: 13.5px 36px;
+            font-size: 15px;
+            line-height: 15px;
+            background-color: rgba($color--white, 0.15);
+            border-radius: 32px;
+            text-transform: uppercase;
         }
 
         &:first-child {
-            .tariff__details__options {
+            .tariff__options {
                 margin-bottom: 62px;
             }
         }
-    }
 
-    .tariff:nth-child(3) {
-        width: 299px;
-        background-color: $color--violet-card;
+        &:nth-child(3) {
+            width: 299px;
+            background-color: $color--violet-card;
 
-        .tariff__title {
-            padding: 43px 0;
-            background-color: rgba($color--black, 0.11);
-        }
-
-        .tariff__details {
-            padding-top: 8px;
-            padding-bottom: 47px;
-
-            &__price {
-                font-size: 82px;
-                line-height: 90px;
-                margin-bottom: 12px;
-            }
-            
-            &__period {
-                margin-bottom: 98px;
-
-                &::after {
-                    position: absolute;
-                    content: '';
-                    width: 60px;
-                    height: 5px;
-                    background-color: $color--violet-light;
-                    bottom: -52px;
-                    left: 40%;
+            .tariff {
+                &__title {
+                    padding: 43px 0;
+                    background-color: rgba($color--black, 0.11);
                 }
-            }
 
-            &__options {
-                margin-bottom: 88px;
-            }
+                &__details {
+                    padding-top: 8px;
+                    padding-bottom: 47px;
+                }
 
-            &__btn {
-                padding: 18px 48px;
-                @include fontSize16_400(18px);
+                &__price {
+                    font-size: 82px;
+                    line-height: 90px;
+                    margin-bottom: 12px;
+                }
+                
+                &__period {
+                    margin-bottom: 98px;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 60px;
+                        height: 5px;
+                        background-color: $color--violet-light;
+                        bottom: -52px;
+                        left: 40%;
+                    }
+                }
+
+                &__options {
+                    margin-bottom: 88px;
+                }
+
+                &__btn {
+                    padding: 18px 48px;
+                    @include fontSize16_400(18px);
+                }
             }
         }
     }
