@@ -1,6 +1,6 @@
 @import "variables.mixins";
 .header {
-  background-image: url(../img/header-bcg.svg);
+  background-image: url(../img/header-bcg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,7 +78,7 @@
       transform: scaleX(0);
     }
     .line--btm {
-      transform: translateY(-7px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
   }
   &__list--hiden {
